@@ -2,6 +2,6 @@
 
 int main(int argc, char const *argv[])
 {
-	plusOuMois(mysteryNumber(niveaux()), 0);
+	plusOuMois(mysteryNumber(niveaux()));
 	return 0;
 }

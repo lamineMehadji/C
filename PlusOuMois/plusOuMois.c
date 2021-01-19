@@ -41,14 +41,15 @@ int mysteryNumber(int max)
 	return (number);
 }
 
-void plusOuMois(int number, int coups)
+void plusOuMois(int number)
 { 
-	int	numberUser;
-	int	faux;
+	static int coups = 0;
+	int        numberUser;
+	int        faux;
 
-	coups++;
 	printf("Quel est le nombre ? ");
 	scanf("%d", &numberUser);
+	coups++;
 
 	faux = number != numberUser;
 	if (faux)
@@ -58,7 +59,7 @@ void plusOuMois(int number, int coups)
 		else
 			printf("C'est mois !\n");
 
-		return (plusOuMois(number, coups));
+		return (plusOuMois(number));
 	}
 	else
 		printf("Bravo, vous avez trouvé le nombre mystère en %d coups\n", coups);
@@ -79,10 +80,11 @@ void partie()
 		case 0:
 			return;
 		case 1:
-			plusOuMois(mysteryNumber(niveaux()), 0);
+			plusOuMois(mysteryNumber(niveaux()));
 			break;
 		default:
 			printf("Choix incorrecte\n");
+			return (partie());
 			break;
 	}
 }

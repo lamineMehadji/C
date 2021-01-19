@@ -4,5 +4,5 @@
 
 int niveaux();
 int mysteryNumber(int);
-void plusOuMois(int, int);
+void plusOuMois(int);
 void partie();
