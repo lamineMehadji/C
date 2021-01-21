@@ -1,4 +1,9 @@
-#include <stdio.h>
-#include <stdlib.h>
+#ifndef DEF_DECOUPEMINUTES
+#define DEF_DECOUPEMINUTES
 
-void decoupeMinutes(int*, int*);
+ #include <stdio.h>
+ #include <stdlib.h>
+
+ void decoupeMinutes(int*, int*);
+
+#endif
