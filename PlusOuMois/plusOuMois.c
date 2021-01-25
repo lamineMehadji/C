@@ -5,8 +5,8 @@ int	niveaux()
 	int choix;
 	int max;
 
-	max = 0;
 	choix = 0;
+	max = 0;
 	printf("==== Niveaux ====\n");
 	printf("1 : entre 1 et 100\n");
 	printf("2 : entre 1 et 1000\n");
