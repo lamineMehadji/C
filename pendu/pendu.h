@@ -7,7 +7,7 @@
  #include <string.h>
  #include <stdbool.h>
 
- char lireCaractere();
- void pendu(char*);
+ char	lireCaractere();
+ void	pendu(char*);
 
 #endif
