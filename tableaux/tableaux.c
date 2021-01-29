@@ -1,6 +1,6 @@
 #include "tableaux.h"
 
-int sommeTableau(int* tableau)
+int		sommeTableau(int* tableau)
 {
 	int	somme;
 	int	i;
@@ -12,7 +12,7 @@ int sommeTableau(int* tableau)
 	return (somme);
 }
 
-double moyenneTableau(int* tableau)
+double	moyenneTableau(int* tableau)
 {
 	double	moyenne;
 	int	i;
@@ -24,7 +24,7 @@ double moyenneTableau(int* tableau)
 	return (moyenne);
 }
 
-void copieTableau(int* tableauOriginal, int* tableauCopie)
+void	copieTableau(int* tableauOriginal, int* tableauCopie)
 {
 	int	i;
 
@@ -33,7 +33,7 @@ void copieTableau(int* tableauOriginal, int* tableauCopie)
 		*(tableauCopie + i) = *(tableauOriginal + i);
 }
 
-void maximumTableau(int* tableau, int valeurMax)
+void	maximumTableau(int* tableau, int valeurMax)
 {
 	int	i;
 
@@ -43,7 +43,7 @@ void maximumTableau(int* tableau, int valeurMax)
 			*(tableau + i) = 0;
 }
 
-void ordonnerTableau(int* tableau)
+void	ordonnerTableau(int* tableau)
 {
 	int	i;
 	int	j;
